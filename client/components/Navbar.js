@@ -22,7 +22,7 @@ const Navbar = () => {
                 <ul className="nav-links-list">
                 <Link href="/"><li><a href="#">Home</a></li></Link>
                 <Link href="/menu"><li><a href="#">Feed</a></li></Link>
-                <Link href="/"><li><a href="#">Blogs</a></li></Link>
+                <Link href="/blog"><li><a href="#">Blogs</a></li></Link>
                 
                 </ul>
             </div>

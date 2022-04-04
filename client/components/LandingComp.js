@@ -11,9 +11,10 @@ const LandingComp = () => {
             <h1>Out of the Closets and into the Streets</h1>
             <h2>#LoveIsLove</h2>
         </div>
-        <div className="logger">
-            <h2>Become Member of our Social Community</h2>
-            <Link  href="/auth" ><h3>Login</h3></Link>
+        <div className="login-cta">
+            <h2>Become member of our Social Community </h2>
+            <h3>Login or Register and be the part of revolution</h3>
+            <Link  href="/auth" type="button" ><h4>Join</h4></Link>
         </div>
     </div>
     </div>
