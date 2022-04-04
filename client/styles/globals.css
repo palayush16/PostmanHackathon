@@ -110,7 +110,7 @@ a {
       display:flex;
       flex-direction: column;
       position:fixed;
-      background-color:rgba(255,20,23,0.5);
+      background-color:#fff;
       align-content: center;
 
   }
@@ -170,7 +170,7 @@ a {
 .liner{
   margin: auto 0;
   margin-left: 20px;
-  max-width:50vw;
+  max-width:60vw;
   
 }
 .liner h1{
@@ -183,14 +183,64 @@ a {
   font-size:32px;
   color: #fff;
 }
-.logger{
+.login-cta{
+  width: 26%;
+  top:25%;
+  background-color: rgba(255, 255, 255,1);
+  margin:auto;
+  padding: 30px 40px;
+  position: fixed;
+  right:6vw;
+}
+.login-cta h2{
+  
+ 
+  color: #000;
+  letter-spacing:1.5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top:50px;
+}
+.login-cta h3{
+  text-align: center;
+  margin: auto;
+  color: #000;
+  letter-spacing:1.5px;
+  padding-top:40px;
+  
+}
+.login-cta h4{
+  font-weight: bold;
+  font-size:20px;
+  text-align: center;
+  color:#fff;
+  letter-spacing:1px;
+  border:3px solid #fff;
+  background-color: #000;
+  
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  margin:20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.login-cta h4:hover{
+  background-color:#fff;
+  color:#000;
+  border:3px solid #000;
+  transition:0.9s;
+}
+
+/* .logger{
   height:320px;
   margin: auto;
   width:320px;
-  background-color: rgba(255,255,255,0.3);
+  background-color: #fff;
   border-radius: 5px;
-  
-  color: #fff;
+  text-align: center;
+  color: #000;
   letter-spacing:1.5px;
   padding:20px;
   padding-top:60px;
@@ -211,11 +261,11 @@ a {
  
   margin:50px auto 0;
 }
-.logger h3 :hover{
+.logger h3:hover{
   background-color:#000;
   color:#fff;
 }
-  
+   */
 
 /*dddddddddddddauthauth auath       daaaaa*/
 
@@ -280,14 +330,14 @@ letter-spacing: 2px;
 text-align: center;
 width:100%;
 margin-bottom: 10px;
-color:#555;
+color:#000;
 }
 section .container .user .formBx form input {
   position: relative;
   width: 100%;
   padding: 10px;
   background:#f5f5f5;
-  color:#333;
+  color:#000;
   border: none;
   outline: none;
   box-shadow: none;
@@ -300,10 +350,11 @@ section .container .user .formBx form input {
 section .container .user .formBx form input[type="submit"]
 {
   max-width: 100px;
-  background:#677eff;
+  background:#000;
   color: #fff;
   cursor:pointer;
-  font-size:14px;font-weight:500;
+  font-size:14px;
+  font-weight:500;
   letter-spacing:1px;
   transition: 0.5s;
 }
@@ -312,7 +363,7 @@ section .container .user .formBx form .signup{
   margin-top: 20px;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #555;
+  color: #000;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -320,7 +371,7 @@ section .container .user .formBx form .signup a
 {
   font-weight: 600;
   text-decoration: none;
-  color: #677eff;
+  color: #000;
 }
 section .container .signupBx{
   pointer-events: none;
@@ -372,3 +423,166 @@ section .container.active .signinBx .imgBx{
   }
 }
 
+
+.blog-container{
+  width:100vw;
+  height:100vh;
+  background-image: url(../public/images/lgbt.jpeg);
+  box-sizing: border-box;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  padding:0 30px;
+  padding-top:100px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x:hidden;
+}
+.blog-container-list{
+  width: 70%;
+  height: 100%;
+  background-color: transparent;
+  padding: 2px 2%;
+  margin-left:5vw;
+ 
+}
+
+
+.blog-container-list h2{
+  font-weight: bold;
+  font-size:60px;
+  color: #fff;
+}
+.blog-container-list h3{
+  font-weight: bold;
+  font-size:32px;
+  color: #fff;
+}
+
+
+.blog{
+ width: 80%;
+ align-content: center;
+ margin: 30px 0;
+ background-color:#fff;
+ color: #000 !important;
+ border-radius: 5px;
+ word-wrap    : break-word;
+ overflow-wrap: break-word;
+
+}
+.blog-image {
+  background-color:#677eff;
+  width:100%;
+  height:300px;
+  border-radius: 5px;
+}
+ 
+.blog-item h4{
+  font-size: 1.7em;
+}
+.blog-item h5{
+  font-size: 1.2em;
+  padding-top:25px;
+}
+.blog-item p{
+  font-size: 1em;
+  
+}
+.blog-item {
+  padding:20px;
+  font-family: sans-serif; 
+}
+
+.blog-container-create{
+  width: 27%;
+  top:25%;
+  background-color: rgba(255, 255, 255,1);
+  margin:auto;
+  padding: 30px;
+  position: fixed;
+  right:6vw;
+}
+.blog-container-create h2{
+  
+ 
+  color: #000;
+  letter-spacing:1.5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top:50px;
+}
+.blog-container-create h3{
+  text-align: center;
+  margin: auto;
+  color: #000;
+  letter-spacing:1.5px;
+  padding-top:40px;
+  
+}
+.blog-container-create h4{
+  font-weight: bold;
+  font-size:20px;
+  text-align: center;
+  color:#fff;
+  letter-spacing:1px;
+  border:3px solid #fff;
+  background-color: #000;
+  cursor:pointer;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  margin:20px;
+  margin-bottom: 50px;
+}
+.blog-container-create h4:hover{
+  background-color:#fff;
+  color:#000;
+  border:3px solid #000;
+  transition:0.9s;
+}
+
+/*vvfvfvfvfvffffffffffffffffffffffffffffffffffff*/
+
+.create-blog-container{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, red, orange, yellow, green, blue, indigo, violet, red);
+  padding:100px;
+  text-align: center;
+ 
+}
+
+.form-blog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+
+}
+
+.form-blog input{
+  margin: 10px;
+  width: 80%;
+  font-size: 20px;
+  padding: 12px;
+  
+}
+.form-body{
+  margin: 10px;
+  width: 80%;
+  height:250px;
+  font-size: 20px;
+  padding: 12px;
+ 
+}
+.form-blog input[type="submit"]
+{
+  max-width: 120px;
+  background:#000;
+  color: #fff;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:400;
+  
+}
