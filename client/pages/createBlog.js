@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <div>
         <Navbar/>
-        <CreateBlog/>
+        <CreateBlog className="create-blog-container"/>
     </div>
   )
 }
