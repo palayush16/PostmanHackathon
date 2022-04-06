@@ -35,12 +35,12 @@ const auth = () => {
                 <div className="user signupBx">
                     
                     <div className="formBx">
-                        <form>
+                        <form action='http://localhost:5000/signup' method='POST'>
                             <h2>Create an Account</h2>
-                            <input type="text" name="" placeholder="Username"/>
-                            <input type="email" name="" placeholder="Email Address"/>
-                            <input type="password" name="" placeholder="Password"/>
-                            <Link href="/respage"><input type="submit" name="" value="Signup"/></Link>
+                            <input type="text" name="userName" placeholder="Username"/>
+                            <input type="email" name="emailID" placeholder="Email Address"/>
+                            <input type="password" name="password" placeholder="Password"/>
+                            <input type="submit" name="" value="Signup"/>
                             <p className="signup">Already have a account?<a href="#" onClick={toggleForm} >Sign In</a></p>
                         </form>
                     </div>

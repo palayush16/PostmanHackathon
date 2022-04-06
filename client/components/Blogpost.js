@@ -1,7 +1,29 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import Link from 'next/link'
 
 const Blogpost = () => {
+
+    const axios = require('axios');
+    let [allObjects,setAllObjects] = useState([])
+
+    
+
+    useEffect(()=>{
+        axios.get('http://localhost:5000/blogs').then((response) =>{
+        console.log(response.data)
+        setAllObjects(response.data);
+
+    })
+        
+
+        
+
+
+    },[])
+    
+
+
+  
 
     const BlogList = [
         {
@@ -22,20 +44,22 @@ const Blogpost = () => {
         }
        
     ];
+    console.log(BlogList);
+    // console.log(allObjects[0].blogTitle)
   return (
     <div className="blog-container">
         <div className="blog-container-list">
             <h2>Blogs</h2>
             <h3>Express yourself and Learn from others</h3>
-            {BlogList.map(({ title,author,image,body}) => (
+            {allObjects.map((post) => (
                 <div className="blog">
                     <div className="blog-image">
                         
                     </div>
                     <div className="blog-item">
-                        <h4>{title}</h4>
-                        <h5>{author}</h5>
-                        <p>{body}</p>
+                        <h4>{post.blogTitle}</h4>
+                        <h5>{post.blogAuthor}</h5>
+                        <p>{post.blogBody}</p>
                     </div>
                 </div>
             ))}
