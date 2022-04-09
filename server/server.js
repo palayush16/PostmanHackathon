@@ -1,4 +1,4 @@
-const uri = "mongodb://localhost:27017/postmanhackathon"
+const uri = 'mongodb+srv://ayushSharma:siuuuRony@mycluster.o5frq.mongodb.net/postmanhackathon?retryWrites=true&w=majority'
 const express = require('express')
 const bodyParser = require('body-parser')
 const md5 = require('md5');
@@ -51,9 +51,6 @@ async function getList(){
 };
 
 getList();
-
-
-
 
 app.post('/signup',function(req, res){
 
@@ -122,25 +119,18 @@ app.post('/blogpost', (req, res) => {
 
 })
 
-
-
 app.listen(5000, ()=>{
     console.log('listening to port 5000');
 
 })
-
-
 
 app.get('/blogs', (req, res) => {
     res.send(allDocuments);
 
 })
 
-
 for(let i = 0;i<5;i++)
-{
-
-       
+{      
 
     var config = {
         method: 'get',
@@ -159,8 +149,7 @@ for(let i = 0;i<5;i++)
 
             console.log(ID_ARRAY)
             for(let i = 0;i<5;i++)
-            {
-                
+            {               
 
                 var config = {
                     method: 'get',
@@ -185,11 +174,8 @@ for(let i = 0;i<5;i++)
                                 res.send(TWEET_IDS);
                             })
                             console.log(TWEET_IDS);
-                        }
-                        
-                        
-
-                        
+                        }                     
+                                                
                         // console.log(TWEET_IDS);
                     }
                     
@@ -198,21 +184,12 @@ for(let i = 0;i<5;i++)
                 .catch(function (error) {
                     console.log(error);
                 });
-
             }
-
-            
-
         }
-        
-        
-
-        
       })
       .catch(function (error) {
         console.log(error);
       });
-
 }
 
 app.get('/tweetids',(req, res)=>{
