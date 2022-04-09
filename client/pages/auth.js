@@ -22,11 +22,11 @@ const auth = () => {
                 <div className="user signinBx">
                     <div className="imgBx"></div>
                     <div className="formBx">
-                        <form>
+                        <form form action='http://localhost:5000/login' method='POST'>
                             <h2>Sign In</h2>
-                            <input type="text" name="" placeholder="Username"/>
-                            <input type="password" name="" placeholder="Password"/>
-                            <Link href="/respage"><input type="submit" name="" value="Login"/></Link>
+                            <input type="text" name="userName" placeholder="Username"/>
+                            <input type="password" name="password" placeholder="Password"/>
+                            <input type="submit" name="" value="Login"/>
                             <p className="signup">Don't have a account?<a href="#" onClick={toggleForm}>Sign Up</a></p>
                         </form>
                     </div>

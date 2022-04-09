@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="nav-links show">
                 <ul className="nav-links-list">
                 <Link href="/"><li><a href="#">Home</a></li></Link>
-                <Link href="//feeds"><li><a href="#">Feed</a></li></Link>
+                <Link href="/feeds"><li><a href="#">Feed</a></li></Link>
                 <Link href="/blog"><li><a href="#">Blogs</a></li></Link>
                 
                 </ul>

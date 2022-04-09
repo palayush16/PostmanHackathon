@@ -1,9 +1,15 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
+
 import { TwitterTweetEmbed , TwitterTimelineEmbed} from 'react-twitter-embed';
 import Navbar from "../components/Navbar";
 
 
 const feeds = () => {
+    const axios = require('axios');
+    
+    
+    let [ids,setIds] = useState([]);
+    
     const Feeds = [
         {
             "id": "1511102816772837387",
@@ -23,14 +29,27 @@ const feeds = () => {
         }
        
     ];
+
+    useEffect(()=>{
+        axios.get('http://localhost:5000/tweetids').then((res) => {
+        setIds(res.data)
+        console.log(res.data)
+    })
+   
+
+    },[])
+    
   return (
       
       <div className="feed-page">
         
         <Navbar/>
         <div className="tweets">
-        {Feeds.map(({id}) => (   
-        <TwitterTweetEmbed class  key={id} tweetId={id}  />
+        <h2>Tweets from Popular Social Accounts</h2>
+        <h3>Recents Tweets</h3>
+        
+        {ids.map((id) => (   
+        <TwitterTweetEmbed class   tweetId={id}  />
         ))}
 
         
